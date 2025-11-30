@@ -2,7 +2,7 @@ BIOS 611 Final Project -- Thyroid Cancer Recurrence Study
 
 Repo layout:
 ```
-BIOS611-Thyroid_Cancer/
+BIOS-611/
 ├── Dockerfile
 ├── Makefile
 ├── README.md
