@@ -41,16 +41,49 @@ docker run --rm -p 8787:8787 \
   <student-name>
 ```
 
-Open a browser and go to:
-
-http://localhost:8787
+Open a browser and go to: http://localhost:8787
 
 
-Log in with:
+Log in with: 
 
 username: rstudio
-
 password: rstudio
+
+
+Generate the Report
+
+Inside RStudio terminal (not the Console):
+
+```
+cd /home/rstudio/project
+make report.html
+```
+
+The report file will appear in the project directory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
