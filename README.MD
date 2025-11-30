@@ -46,9 +46,10 @@ Open a browser and go to: http://localhost:8787
 
 Log in with: 
 
+```
 username: rstudio
 password: rstudio
-
+```
 
 Generate the Report
 
@@ -61,8 +62,41 @@ make report.html
 
 The report file will appear in the project directory.
 
+Developer Notes
 
+The project is organized using a Makefile.
 
+Targets include:
+
+```
+make report.html   # build HTML report
+make clean         # remove build artifacts
+```
+
+All code is contained within report.Rmd.
+
+The Dockerfile installs all required R packages so the project is fully reproducible. The repo uses .gitignore to avoid committing build products, R history files, and other local artifacts.
+
+Reproducibility Check
+
+To reproduce the submission from scratch:
+
+```
+cd /tmp
+git clone <repo-url>
+cd BIOS611-Thyroid_Cancer
+docker build . -t student
+docker run --rm -p 8787:8787 \
+  -e PASSWORD=rstudio \
+  -v $(pwd):/home/rstudio/project \
+  student
+```
+
+In RStudio terminal:
+```
+cd /home/rstudio/project
+make report.html
+```
 
 
 
