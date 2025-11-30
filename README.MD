@@ -1,4 +1,9 @@
-BIOS 611 Final Project -- Thyroid Cancer Recurrence Study
+BIOS 611 Final Project — Thyroid Cancer Recurrence Study
+
+Overview
+
+This project analyzes clinical predictors of thyroid cancer recurrence using statistical methods (Firth logistic regression) and machine-learning methods (XGBoost).
+The final report is generated from report.Rmd.
 
 Repo layout:
 ```
@@ -12,8 +17,40 @@ BIOS-611/
     └── Thyroid_Diff.csv
 ```
 
+Data
+
+The analysis uses a single dataset: data/Thyroid_Diff.csv
+
+Build & Run With Docker
 
 
+1. Clone the repository git clone https://github.com/Astes1a2001/BIOS-611
+
+``` cd BIOS-611 ```
+
+2. Build the image
+
+``` docker build . -t <student-name> ```
+
+3. Run the container
+
+```
+docker run --rm -p 8787:8787 \
+  -e PASSWORD=rstudio \
+  -v $(pwd):/home/rstudio/project \
+  <student-name>
+```
+
+Open a browser and go to:
+
+http://localhost:8787
+
+
+Log in with:
+
+username: rstudio
+
+password: rstudio
 
 
 
