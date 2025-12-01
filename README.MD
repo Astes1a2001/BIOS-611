@@ -34,10 +34,7 @@ The analysis uses a single dataset: data/Thyroid_Diff.csv
 3. Run the container
 
 ```
-docker run --rm -p 8787:8787 \
-  -e PASSWORD=rstudio \
-  -v $(pwd):/home/rstudio/project \
-  <student-name>
+docker run --rm -p 8787:8787 -e PASSWORD=rstudio -v $(pwd):/home/rstudio/project bios611project
 ```
 
 Open a browser and go to: http://localhost:8787
@@ -52,7 +49,7 @@ password: rstudio
 
 **Generate the Report:**
 
-Inside RStudio terminal (not the Console):
+Inside RStudio terminal:
 
 ```
 cd /home/rstudio/project
@@ -75,27 +72,6 @@ make clean         # remove build artifacts
 All code is contained within report.Rmd.
 
 The Dockerfile installs all required R packages so the project is fully reproducible. The repo uses .gitignore to avoid committing build products, R history files, and other local artifacts.
-
-**Reproducibility Check:**
-
-To reproduce the submission from scratch:
-
-```
-cd /tmp
-git clone <repo-url>
-cd BIOS611-Thyroid_Cancer
-docker build . -t student
-docker run --rm -p 8787:8787 \
-  -e PASSWORD=rstudio \
-  -v $(pwd):/home/rstudio/project \
-  student
-```
-
-In RStudio terminal:
-```
-cd /home/rstudio/project
-make report.html
-```
 
 
 
