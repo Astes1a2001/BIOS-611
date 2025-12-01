@@ -34,7 +34,7 @@ The analysis uses a single dataset: data/Thyroid_Diff.csv
 3. Run the container
 
 ```
-docker run --rm -p 2333:2333 -e PASSWORD=rstudio -v $(pwd):/home/rstudio/project bios611project
+docker run --rm -p 2333:2333 -e PASSWORD=rstudio -v "$(pwd)":/home/rstudio/project bios611project
 ```
 
 Open a browser and go to: http://localhost:2333
