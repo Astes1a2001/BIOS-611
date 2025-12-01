@@ -23,6 +23,8 @@ The analysis uses a single dataset: data/Thyroid_Diff.csv
 
 **Build & Run With Docker:**
 
+In Git Bash:
+
 1. Clone the repository git clone https://github.com/Astes1a2001/BIOS-611
 
 ``` cd BIOS-611 ```
@@ -34,10 +36,11 @@ The analysis uses a single dataset: data/Thyroid_Diff.csv
 3. Run the container
 
 ```
-docker run --rm -p 2333:2333 -e PASSWORD=rstudio -v "$(pwd)":/home/rstudio/project bios611project
+winpty docker run --rm -p 8787:8787  -e PASSWORD=rstudio -v "/$(pwd -W)":/home/rstudio/project bios611project
+
 ```
 
-Open a browser and go to: http://localhost:2333
+Open a browser and go to: http://localhost:8787
 
 
 Log in with: 
