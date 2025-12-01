@@ -1,5 +1,4 @@
 # BIOS 611 project Docker image
-# Base image with R + RStudio server
 FROM rocker/rstudio:4.4.1
 
 # System deps used by some R packages
