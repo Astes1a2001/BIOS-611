@@ -13,8 +13,8 @@ BIOS-611/
 ├── README.md
 ├── .gitignore
 ├── report.Rmd
-└── data/
-    └── Thyroid_Diff.csv
+├── Thyroid_Diff.csv
+├── image.png
 ```
 
 **Data:**
