@@ -29,7 +29,7 @@ The analysis uses a single dataset: data/Thyroid_Diff.csv
 
 2. Build the image
 
-``` docker build . -t <student-name> ```
+``` docker build . -t ruochen ```
 
 3. Run the container
 
