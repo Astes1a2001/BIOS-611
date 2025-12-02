@@ -36,7 +36,7 @@ In Git Bash:
 3. Run the container
 
 ```
-winpty docker run --rm -p 8787:8787  -e PASSWORD=rstudio -v "/$(pwd -W)":/home/rstudio/project bios611project
+winpty docker run --rm -p 8787:8787  -e PASSWORD=rstudio -v "/$(pwd -W)":/home/rstudio/project ruochen
 
 ```
 
