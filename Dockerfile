@@ -9,17 +9,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxt-dev \
   && rm -rf /var/lib/apt/lists/*
 
-RUN R -e "install.packages( \
-  c('tidyverse',      \
-    'FactoMineR',    \
-    'factoextra',    \
-    'DescTools',     \
-    'logistf',       \
-    'recipes',       \
-    'caret',         \
-    'xgboost',       \
-    'pROC',          \
-    'ROCR'),         \
-  repos = 'https://cloud.r-project.org')"
+RUN R -e "install.packages( 
+    c('tidyverse','FactoMineR','factoextra','DescTools','logistf'),
+    repos='https://packagemanager.posit.co/cran/latest'
+  )"
 
 WORKDIR /home/rstudio/project
