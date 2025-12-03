@@ -25,8 +25,9 @@ The analysis uses a single dataset: data/Thyroid_Diff.csv
 
 **In Git Bash**:
 
-1. Clone the repository git clone https://github.com/Astes1a2001/BIOS-611
+1. Clone the repository 
 
+```git clone https://github.com/Astes1a2001/BIOS-611.git ```
 ``` cd BIOS-611 ```
 
 2. Build the image
