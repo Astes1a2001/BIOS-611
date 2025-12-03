@@ -15,6 +15,7 @@ BIOS-611/
 ├── report.Rmd
 ├── Thyroid_Diff.csv
 ├── image.png
+├── report.html
 ```
 
 **Data:**
