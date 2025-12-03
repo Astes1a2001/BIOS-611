@@ -23,7 +23,7 @@ The analysis uses a single dataset: data/Thyroid_Diff.csv
 
 **Build & Run With Docker:**
 
-In Git Bash:
+**In Git Bash**:
 
 1. Clone the repository git clone https://github.com/Astes1a2001/BIOS-611
 
