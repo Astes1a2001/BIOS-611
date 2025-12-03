@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxt-dev \
   && rm -rf /var/lib/apt/lists/*
 
-RUN R -e "install.packages( c('tidyverse','FactoMineR','factoextra','DescTools','logistf'))"
+RUN R -e "install.packages( c('tidyverse','FactoMineR','factoextra','DescTools','logistf','recipes'))"
 
 WORKDIR /home/rstudio/project
