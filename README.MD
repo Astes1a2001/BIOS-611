@@ -72,8 +72,8 @@ The project is organized using a Makefile.
 Targets include:
 
 ```
-make report.html   # build HTML report
-make clean         # remove build artifacts
+make report.html
+make clean
 ```
 
 All code is contained within report.Rmd.
